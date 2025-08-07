@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parthiv Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #00ff88;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 28px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    nav a {
+      color: #00ff88;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 80px 50px;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-image: url('https://source.unsplash.com/1600x900/?camera,landscape');
+      background-size: cover;
+      background-position: center;
+      color: #00ff88;
+      animation: zoomIn 2s ease;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #eee;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .about, .contact {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Parthiv Photography</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Capturing Life, One Frame at a Time</h2>
+    <p>Explore the world through Parthiv's lens</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Parthiv, a passionate photographer who loves capturing candid moments, stunning landscapes, and vivid portraits. Every photo tells a story, and I strive to tell yours in the most artistic way possible.</p>
+  </section>
+
+  <section class="gallery" id="portfolio">
+    <h2>My Work</h2>
+    <img src="https://source.unsplash.com/600x400/?nature" alt="Nature" />
+    <img src="https://source.unsplash.com/600x400/?portrait" alt="Portrait" />
+    <img src="https://source.unsplash.com/600x400/?city" alt="Cityscape" />
+    <img src="https://source.unsplash.com/600x400/?wildlife" alt="Wildlife" />
+    <img src="https://source.unsplash.com/600x400/?wedding" alt="Wedding" />
+    <img src="https://source.unsplash.com/600x400/?street" alt="Street" />
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work together or just say hello, feel free to reach out:</p>
+    <p>Email: <a href="mailto:parthiv@example.com">parthiv@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/parthiv_photography" target="_blank">@parthiv_photography</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Parthiv Photography. All rights reserved.
+  </footer>
+</body>
+</html>
